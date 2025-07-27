@@ -54,9 +54,9 @@
 
 
 # favorite_language = 'python '
-# print(favorite_language.rstrip() + '31')            # removes blank space
+# print(favorite_language.rstrip() + '42')            # removes blank space
 # fav_lang = favorite_language.rstrip()
-# print(fav_lang + '31')
+# print(fav_lang + '42')
 
 
 # fav_lang = ' python '
@@ -64,7 +64,7 @@
 # fav_lang.rstrip() -- ' python'
 # fav_lang.strip() -- 'python'
 # fav_lang = fav_lang.strip()
-# print('31' + fav_lang + '31')
+# print('42' + fav_lang + '42')
 
 
 
@@ -80,7 +80,7 @@
 
 
 # age = 23
-# message = 'Happy' + str(age) + 'rd Birthday'        # 23 is an integer(floatt?gyatttt). Code must interpret it as a string. str() function helps number -- string
+# message = 'Happy' + str(age) + 'rd Birthday'        # 23 is an integer. Code must interpret it as a string. str() function helps number -- string
 # print(message)
 
 
@@ -106,11 +106,11 @@
 # moto = ['yamaha', 'suzuki', 'honda']
 # print(moto)
 
-# moto[0] = 'qozumaki'
+# moto[0] = 'brbrpatapim'
 # print(moto)
 
 
-# moto.append('duduw')
+# moto.append('saturnosaturnita')
 # print(moto)
 
 
@@ -331,7 +331,7 @@
 
 
 # age = 18
-# print(age == 18, age == 31)
+# print(age == 18, age == 42)
 
 
 # answer = 17
@@ -469,8 +469,6 @@
 
 ### Dictionaries
 
-
-
 # alien_0 = {'color' : 'green', 'points' : 5}
 # print(alien_0['color'])
 # print(alien_0['points'])
@@ -531,8 +529,6 @@
 
 ### Looping Through a Dictionary
 
-
-
 # user_0 = {'username' : 'efermi',
 #           'first' : 'enrico',
 #            'last' : 'fermi' }
@@ -581,8 +577,6 @@
 
 
 ### Nesting
-
-
 
 # alien_0 = {'color': 'green', 'points': 5}
 # alien_1 = {'color': 'yellow', 'points': 10}
@@ -663,8 +657,6 @@
 
 ### User Input and While Loops
 
-
-
 # message = input('Tell me something, and I will repeat it back to you: ')
 # print(message)
 
@@ -707,8 +699,6 @@
 
 
 ### Introducing While Loops
-
-
 
 # num = 1
 # while num <= 5:
@@ -821,8 +811,6 @@
 
 ### Functions
 
-
-
 # def greet_user():
 #     print('Hello!')
 # greet_user()
@@ -836,8 +824,6 @@
 
 
 ### Passing Arguments
-
-
 
 # def describe_pet(animal_type, pet_name):
 #     print('\nI have a ' + animal_type + '.')
@@ -876,8 +862,6 @@
 
 ### Return Values
 
-
-
 # def get_formatted_name(first_name, last_name):
 #     full_name = first_name + ' ' + last_name
 #     return full_name.title()
@@ -890,7 +874,7 @@
 #     fullname = firstname + ' ' + middlename + ' ' + lastname
 #     return fullname.title()
 
-# musician = getformattedname('john', 'lee', 'hooker')
+# musician = getformattedname('john', 'lee', 'barista')
 # print(musician)
 
 
@@ -903,7 +887,7 @@
 #     return fullname.title()
 # musician = getformattedname_1('jimi', 'hendrix')
 # print(musician)
-# musician = getformattedname_1('john', 'hooker', 'lee')
+# musician = getformattedname_1('john', 'barista', 'lee')
 # print(musician)
 
 
@@ -949,8 +933,6 @@
 
 
 ###   Passing a List
-
-
 
 # def greetusers(names):
 #     for name in names:
@@ -998,8 +980,6 @@
 
 ### Passing an Arbitrary Number of Arguments
 
-
-
 # def make_pizza(*toppings):      # * toppings --- python makes an empty tuple called toppings and pack whatever value it receives into this tuple
 #     print('\nMaking a pizza with the following toppings:')
 #     for topping in toppings:
@@ -1039,8 +1019,6 @@
 
 ### Storing Your Functions in Modules
 
-
-
 # def make_pizza(size, *toppings):
 #     print('\nMaking a ' + str(size) + 
 #           '-inch pizza with the following toppings:')
@@ -1059,7 +1037,7 @@
 # from module_name import function_0, function_1, function_2
 
 
-
+# You're gonna need to define these in another file(s) in the same directory
 # from pizza import make_pizza as mp
 # from module_name import function_name as fn
 # import pizza as p
@@ -1071,8 +1049,6 @@
 
 
 ### Styling Functions
-
-
 
 # def function_name(parameter_0, parameter_1 = 'default value')
 # function_0(value_0, parameter_1 = 'value')

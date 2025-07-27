@@ -97,16 +97,8 @@
 
 
 
-
-
-
-
-
-    
-
-
-
-
 # import os
 # os.chdir('C:/Users/Bayram/Desktop')
 # os.rename('try-except blocks.py', 'Try-Except Blocks.py')
+
+# For future reference, pathlib is better than os. Tend to use it more.

@@ -53,12 +53,3 @@
 
 # my_new_car.odometer_reading = 31
 # my_new_car.read_odometer()
-
-
-
-
-
-
-
-
-        

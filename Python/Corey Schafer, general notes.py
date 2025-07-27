@@ -114,7 +114,7 @@
 # person = {'name': 'Bayram', 'age': 20, 'movie': 'Suits'}
 
 
-# l = ['profesyonel otuzbirci', '31', 'turkish']
+# l = ['profesyonel', '42', 'turko']
 
 
 # for i in range (1,11):

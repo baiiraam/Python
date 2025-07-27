@@ -1,47 +1,47 @@
 # exercises
 
 
-### AVERAGE OF N NUMBERS
+# ## AVERAGE OF N NUMBERS
 
 
-num = int(input('how many numbers ? '))
-total = 0
+# num = int(input('how many numbers ? '))
+# total = 0
 
-for n in range(num):
-    enter_num = int(input('enter a number : '))
-    total += enter_num
+# for n in range(num):
+#     enter_num = int(input('enter a number : '))
+#     total += enter_num
 
-avg = total/num
-print('average of numbers is: ', avg)
+# avg = total/num
+# print('average of numbers is: ', avg)
 
 
 
 
 
 
-### SUM OF FIRST N POSITIVE INTEGERS
+# ## SUM OF FIRST N POSITIVE INTEGERS
 
-while True:
-    num = input('enter the N : ')
-    sum = 0
-    if num == 'quit':
-        break
+# while True:
+#     num = input('enter the N : ')
+#     sum = 0
+#     if num == 'quit':
+#         break
 
-    for n in range(int(num)):
-        sum += n
+#     for n in range(int(num)):
+#         sum += n
 
-    print(sum)
+#     print(sum)
 
 
 
 
 
 
-### CURRENT USERNAME
+# ## CURRENT USERNAME
 
 
-import getpass
-print(getpass.getuser())
+# import getpass
+# print(getpass.getuser())
 
 
 
@@ -49,11 +49,11 @@ print(getpass.getuser())
 
 
 
-### PYTHON VERSION OF MINE
+# ## PYTHON VERSION OF MINE
 
 
-import sys
-print(sys.version)
+# import sys
+# print(sys.version)
 
 
 
@@ -61,41 +61,41 @@ print(sys.version)
 
 
 
-### DATE AND TIME NOW
+# ## DATE AND TIME NOW
 
 
-import datetime
-now = datetime.datetime.now()
-print('current date and time is: ')
-print(now.strftime('%y - %m - %d  %H : %M : %S'))
+# import datetime
+# now = datetime.datetime.now()
+# print('current date and time is: ')
+# print(now.strftime('%y - %m - %d  %H : %M : %S'))
 
 
 
 
 
-### TRIANGLE PATTERN?
+# ## TRIANGLE PATTERN?
 
 
-for i in range(7):
-    print('*'*i)
+# for i in range(7):
+#     print('*'*i)
 
 
-print(3, end = '')
-print(4, end = '')
-print(5, '\n')
-print(6, '\n')
+# print(3, end = '')
+# print(4, end = '')
+# print(5, '\n')
+# print(6, '\n')
 
 
-def right_pyramid(n):
-    for row in range(1, n+1):
-        start_index = n-row
-        print(' '*start_index, end='')
-        for star in range(row):
-            print('*', end='')
+# def right_pyramid(n):
+#     for row in range(1, n+1):
+#         start_index = n-row
+#         print(' '*start_index, end='')
+#         for star in range(row):
+#             print('*', end='')
 
-        print('')
+#         print('')
 
-right_pyramid(6)
+# right_pyramid(6)
 
 
 
@@ -103,19 +103,19 @@ right_pyramid(6)
 
 
 
-def star_pyramid(n):
-    for row in range(1, n+1):
-        start_index = n - row
-        print(' ' * start_index, end = '')
-        for star in range(row + row - 1):
-            if star % 2 == 0:
-                print('*', end = '')
+# def star_pyramid(n):
+#     for row in range(1, n+1):
+#         start_index = n - row
+#         print(' ' * start_index, end = '')
+#         for star in range(row + row - 1):
+#             if star % 2 == 0:
+#                 print('*', end = '')
 
-            else:
-                print(' ', end = '')
-        print(' ')
+#             else:
+#                 print(' ', end = '')
+#         print(' ')
 
-star_pyramid(7)
+# star_pyramid(7)
 
 
 
@@ -123,19 +123,19 @@ star_pyramid(7)
 
 
 
-### DATES, TIME
+# ## DATES, TIME
 
 
-import datetime
-print(datetime.datetime.now())
+# import datetime
+# print(datetime.datetime.now())
 
 
-today = datetime.datetime.now()
-print(today - datetime.timedelta(days = 1))
+# today = datetime.datetime.now()
+# print(today - datetime.timedelta(days = 1))
 
 
-for i in range(7):
-    print(today - datetime.timedelta(days = i))
+# for i in range(7):
+#     print(today - datetime.timedelta(days = i))
 
 
 
@@ -143,69 +143,69 @@ for i in range(7):
 
 
 
-### DUPLICATES
+# ## DUPLICATES
 
 
-a = [7, 7, 7, 4, 4, 8, 8, 'the', 1, 2, 3, 4, 5, 6, 7]
+# a = [7, 7, 7, 4, 4, 8, 8, 'the', 1, 2, 3, 4, 5, 6, 7]
 
-from collections import Counter
-print([element for element, count in Counter(a).items() if count > 1])
+# from collections import Counter
+# print([element for element, count in Counter(a).items() if count > 1])
 
 
 
 
 
-### polindrome
+# ## polindrome
 
 
-def if_polindrome(abc):
-    if abc == abc[::-1]:
-        print( 'polindrome')
-    else:
-        print( 'not polindrome')
+# def if_polindrome(abc):
+#     if abc == abc[::-1]:
+#         print( 'polindrome')
+#     else:
+#         print( 'not polindrome')
 
-if_polindrome('level')
-if_polindrome('levels')
+# if_polindrome('level')
+# if_polindrome('levels')
 
 
 
 
 
-### number of vowels
+# ## number of vowels
 
-while True:
-    char = input('enter a sentence: ')
-    vowel_list = ['e', 'u', 'i', 'o', 'a']
-    count = 0
+# while True:
+#     char = input('enter a sentence: ')
+#     vowel_list = ['e', 'u', 'i', 'o', 'a']
+#     count = 0
 
-    if char == 'quit':
-        break
-    for i in char:
-        if i in vowel_list:
-            count += 1
+#     if char == 'quit':
+#         break
+#     for i in char:
+#         if i in vowel_list:
+#             count += 1
 
-    print('number of vowels: ', count)
+#     print('number of vowels: ', count)
 
 
 
 
 
 
-### Prime or not
+# ## Prime or not
 
 
-while True:
-    count = 0
-    num = input('enter a number: ')
-    if num =='quit':
-        break
-    for i in range(1, int(num)):
-        if int(num) % i == 0:
-            count += 1
-    if count == 1:
-        print('it is a prime number')
-    else:
-        print('it is not a prime number')
+# while True:
+#     count = 0
+#     num = input('enter a number: ')
+#     if num =='quit':
+#         break
+#     for i in range(1, int(num)):
+#         if int(num) % i == 0:
+#             count += 1
+#     if count == 1:
+#         print('it is a prime number')
+#     else:
+#         print('it is not a prime number')
 
 
 
@@ -214,17 +214,17 @@ while True:
 
 # Factorial
 
-while True:
-    num = input('enter a number: ')
-    final = 1
-    if num == 'quit':
-        print('...finishing operation...')
-        break
+# while True:
+#     num = input('enter a number: ')
+#     final = 1
+#     if num == 'quit':
+#         print('...finishing operation...')
+#         break
 
-    for i in range(1, int(num) + 1):
-        final *= i
+#     for i in range(1, int(num) + 1):
+#         final *= i
 
-    print(num, ' factorial is ', final)
+#     print(num, ' factorial is ', final)
 
 
 
@@ -232,13 +232,13 @@ while True:
 
 # Split ?
 
-values = input('print some numbers separated with a comma: ')
+# values = input('print some numbers separated with a comma: ')
 
-list = values.split(',')
-tuple = tuple(list)
+# list = values.split(',')
+# tuple = tuple(list)
 
-print(list)
-print(tuple)
+# print(list)
+# print(tuple)
 
 
 
@@ -253,19 +253,19 @@ print(tuple)
 # What is the sum for all numbers below 1000 ?
 
 
-def check(x):
-    if x % 3 == 0 or x % 5 == 0:
-        return True
-    else:
-        return False
+# def check(x):
+#     if x % 3 == 0 or x % 5 == 0:
+#         return True
+#     else:
+#         return False
 
-sum = 0
+# sum = 0
 
-for i in range(1, 1000):
-    if check(i) == True:
-        sum += i
+# for i in range(1, 1000):
+#     if check(i) == True:
+#         sum += i
 
-print(sum)
+# print(sum)
 
 
 
@@ -277,27 +277,27 @@ print(sum)
 # 1, 2, 3, 5, 8, 13, 21, 34, 55, 89...   Starting with 1 and 2, add previous 2 terms to get the next one
 # find the sum of even fibonacci numbers below 4 million
 
-fibonacci = []
-fibonacci.append(1)
-fibonacci.append(2)
+# fibonacci = []
+# fibonacci.append(1)
+# fibonacci.append(2)
 
-i = 2
+# i = 2
 
-while True:
-    if fibonacci[i-1] + fibonacci[i-2] < 4000000:
-        fibonacci.append(fibonacci[i-1] + fibonacci[i-2])
-        i += 1
-    else:
-        break
-sum = 0
-for i in fibonacci:
-    if i % 2 == 0:
-        sum += i
+# while True:
+#     if fibonacci[i-1] + fibonacci[i-2] < 4000000:
+#         fibonacci.append(fibonacci[i-1] + fibonacci[i-2])
+#         i += 1
+#     else:
+#         break
+# sum = 0
+# for i in fibonacci:
+#     if i % 2 == 0:
+#         sum += i
 
-print(sum)
-print(len(fibonacci))
-for i in fibonacci:
-    print(i, end = ', \t')
+# print(sum)
+# print(len(fibonacci))
+# for i in fibonacci:
+#     print(i, end = ', \t')
 
 
 
@@ -415,7 +415,7 @@ for i in fibonacci:
 
 
 
-### Greatest Common Divisor and Least Common Multiple
+# ## Greatest Common Divisor and Least Common Multiple
 
 
 # def gcd(a, b):
